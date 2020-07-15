@@ -10,7 +10,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+<!--		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>-->
 	</head>
 	<body class="is-preload">
 
@@ -18,9 +18,16 @@
 			<div id="wrapper">
 
 				<!-- Header -->
-                <!-- Note: The "styleN" class below should match that of the banner element. -->
-					<header id="header" class="alt style2">
-						<a href="index.html" class="logo"><strong>FabLab Sion</strong></a>
+					<header id="header" class="alt">
+						<a href="index.html" class="logo">
+							<effect>
+								<img
+										id="petit_logo"
+									 	src="images/fablab-sion_logo-notext.png"
+									 	alt="logo"
+								/>
+							</effect>
+						</a>
 						<nav>
 							<a href="#menu">Menu</a>
 						</nav>
@@ -35,10 +42,10 @@
 							<li><a href="association.html">L'Association</a></li>
 							<li><a href="atelier.html">L'Atelier</a></li>
 							<li><a href="soutenir.html">Soutenir</a></li>
+
 						</ul>
 						<ul class="actions stacked">
-							<li><a href="#" class="button primary fit">Fais un tour !</a></li>
-<!--							<li><a href="#" class="button fit">Log In</a></li>-->
+							<li><a href="#" class="button primary fit">Fais un don !</a></li>
 						</ul>
 					</nav>
 
@@ -49,9 +56,9 @@
 							<section id="one">
 								<div class="inner">
 									<header class="major">
-										<h1>Generic</h1>
+										<h1>L'Association du FabLab Sion</h1>
 									</header>
-									<span class="image main"><img src="images/pic11.jpg" alt="" /></span>
+									<span class="image main"><img src="images/banner_fablab_sion.jpg" alt="" /></span>
 									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit.</p>
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p>
 									<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
@@ -74,6 +81,18 @@
 											<label for="email">Email</label>
 											<input type="text" name="email" id="email" />
 										</div>
+										<!-- Break -->
+										<div class="field">
+											<label for="category">Concerne</label>
+											<select name="category" id="category">
+												<option value="">---</option>
+												<option value="1">Informations</option>
+												<option value="1">Membre</option>
+												<option value="1">Cotisations</option>
+												<option value="1">Projet</option>
+											</select>
+										</div>
+										<!-- Break -->
 										<div class="field">
 											<label for="message">Message</label>
 											<textarea name="message" id="message" rows="6"></textarea>
@@ -85,6 +104,7 @@
 									</ul>
 								</form>
 							</section>
+
 							<section class="split">
 								<section>
 									<div class="contact-method">
@@ -128,7 +148,7 @@
 						</div>
 					</footer>
 
-                </div>
+			</div>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
